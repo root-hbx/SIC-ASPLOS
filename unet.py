@@ -159,7 +159,6 @@ def plot_training_history(train_losses, val_losses, val_ious):
     
     plt.tight_layout()
     plt.savefig('training_history.png', dpi=300, bbox_inches='tight')
-    plt.show()
 
 
 def main():
@@ -168,7 +167,7 @@ def main():
     # Hyperparameters
     BATCH_SIZE = 8  # Reduced for M2 Pro memory
     LEARNING_RATE = 1e-4
-    NUM_EPOCHS = 50
+    NUM_EPOCHS = 2
     IMAGE_SIZE = 256  # Reduced from 512 for faster training
     
     # Data paths

@@ -1,43 +1,33 @@
-# UNet Flood Segmentation
+# SIC UNet
 
 A deep-learning project based on Space Intelligence and Edge Computing for flood area segmentation using UNet architecture, ready to go for SIC (ASPLOS'26).
 
-## Project Structure
-
-```
-├── classes.py          # Model definitions and data classes
-│   ├── FloodDataset    # Custom dataset for flood images
-│   ├── UNet           # UNet architecture implementation
-│   ├── DoubleConv     # Convolution block component
-│   ├── DiceLoss       # Dice loss for segmentation
-│   └── CombinedLoss   # BCE + Dice combined loss
-│
-├── unet.py            # Training pipeline and main execution
-├── dataset_divide.py  # Data splitting utility
-├── requirements.txt   # Python dependencies
-└── install.sh        # Installation script
-```
-
 ## Quick Start
 
-(1) **Install dependencies:**
+(1) **Install dependencies**
 
 ```bash
+sudo chmod +x ./install.sh
+conda activate [YOUR_CONDA_VENV]
 ./install.sh
-# or manually:
-pip install -r requirements.txt
 ```
 
-(2) **Prepare your data:**
+(2) **Prepare your data**
 
 - Place training images in `train_dataset/Images/`
 - Place corresponding masks in `train_dataset/Masks/`
 - Use `dataset_divide.py` if needed to split data
 
-(3) **Train the model:**
+(3) **Train the model**
 
 ```bash
 python unet.py
+```
+
+(4) **Use well-trained model to test**
+
+```bash
+python evaluate.py
 ```
 
 ## Key Features
