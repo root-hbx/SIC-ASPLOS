@@ -1,0 +1,8 @@
+train_dataset/
+test_dataset/
+*.zip
+*.txt
+!requirements.txt
+*.csv
+
+
