@@ -165,9 +165,9 @@ def main():
     """Main training function"""
     
     # Hyperparameters
-    BATCH_SIZE = 8  # Reduced for M2 Pro memory
-    LEARNING_RATE = 1e-4
-    NUM_EPOCHS = 2
+    BATCH_SIZE = 32  # Reduced for M2 Pro memory
+    LEARNING_RATE = 1e-5
+    NUM_EPOCHS = 100
     IMAGE_SIZE = 256  # Reduced from 512 for faster training
     
     # Data paths

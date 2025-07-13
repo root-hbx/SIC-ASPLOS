@@ -92,10 +92,10 @@ def main():
     
     total_files = len(all_image_files)
     
-    # Define the range of files to move (first 30% of files as test set)
-    test_ratio = 0.3  # 30% for test set
+    # Define the range of files to move (first 5% of files as test set)
+    test_ratio = 0.05  # 5% for test set
     start_index = 1  # Start from the beginning
-    end_index = int(total_files * test_ratio)  # First 30%
+    end_index = int(total_files * test_ratio)  # First 5%
     
     print(f"Moving first {test_ratio:.0%} of files (approximately {end_index} files)")
     print(f"File range: {start_index}-{end_index}")

@@ -1,6 +1,6 @@
 # SIC UNet
 
-A deep-learning project based on Space Intelligence and Edge Computing for flood area segmentation using UNet architecture, ready to go for SIC (ASPLOS'26).
+Part of our work for Orbit Edge Computing using UNet architecture, ready to go for SIC (ASPLOS'26).
 
 ## Quick Start
 
